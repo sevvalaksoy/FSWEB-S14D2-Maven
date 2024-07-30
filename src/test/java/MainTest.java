@@ -1,3 +1,4 @@
+import org.example.Bedroom;
 import org.example.model.*;
 import org.example.model.enums.LampType;
 import org.example.model.enums.PaintColor;
@@ -132,7 +133,7 @@ public class MainTest {
         System.setOut(new PrintStream(out));
 
         wardrobe.add();
-        assertThat(out.toString(), containsString("Wardrobe added into Bedroom."));
+        assertThat(out.toString(), containsString("Wardrobe added into org.example.Bedroom."));
     }
 
     @DisplayName("Carpet sınıf değişkenleri doğru access modifier değerlerine sahip mi ?")
@@ -163,7 +164,7 @@ public class MainTest {
         System.setOut(new PrintStream(out));
 
         carpet.lying();
-        assertThat(out.toString(), containsString("Carpet is lying on Bedroom floor."));
+        assertThat(out.toString(), containsString("Carpet is lying on org.example.Bedroom floor."));
     }
 
     @DisplayName("Ceiling sınıf değişkenleri doğru access modifier değerlerine sahip mi ?")
